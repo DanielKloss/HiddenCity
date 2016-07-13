@@ -5,42 +5,57 @@ angular.module('hiddenCity', [])
 .controller('controller', [function () {
     var self = this;
 
-    self.submitted = false;
-    self.score = 0;
-
-    self.questions = {
-        question1: {
+    self.clues = [
+        {
             number: 1,
             image: "images/1.jpg",
             question: "How ready are you?",
-            answer1: "Pumped, bring on the adventure!",
-            answer2: "I was about to go for a bike ride but I am curious to see where this is going...",
-            answer3: "Excited but I hope its not too much effort",
-            answer4: "Not going to lie, I'm a little bit scared...",
-            answer: "",
-            theAnswer: "1"
+            answers: ["1", "2", "3"]
         },
-        question2: {
+        {
             number: 2,
             image: "images/2.jpg",
-            question: "What is the likelihood that Mark will piss the bed tonight?",
-            answer1: "Not at all likely",
-            answer2: "Quite Likely",
-            answer3: "Very Likely",
-            answer4: "Definitely",
-            answer: "",
-            theAnswer: "4"
+            question: "What is your name?",
+            answers: ["4", "5", "6"]
         }
+    ];
+
+    self.hints = [
+        {
+            number: 1,
+            hint: "The answer is 1, 2 or 3",
+        },
+        {
+            number: 2,
+            hint: "The answer is 4, 5 or 6",
+        }
+    ];
+
+    self.hasStarted = false;
+    self.isCorrect = false;
+    self.hintGiven = false;
+
+    self.currentClueIndex = 0;
+    self.currentClue = self.clues[self.currentClueIndex];
+    self.currentHint;
+    self.theAnswer = "";
+
+    self.GetHint = function () {
+        self.currentHint = self.hints[self.currentClueIndex];
+        self.hintGiven = true;
     };
 
-    self.submit = function () {
-        self.score = 0;
-        angular.forEach(self.questions, function (value, key) {
-            if (value.answer == value.theAnswer) {
-                self.score += 1;
+    self.SubmitAnswer = function () {
+        self.hasStarted = true;
+        self.isCorrect = false;
+
+        angular.forEach(self.clues[self.currentClueIndex].answers, function (value, key) {
+            if (value == self.theAnswer) {
+                self.currentClueIndex++;
+                self.currentClue = self.clues[self.currentClueIndex];
+                self.isCorrect = true;
+                self.hintGiven = false;
             }
         });
-        self.submitted = true;
     };
-
 }]);

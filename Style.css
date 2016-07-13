@@ -1,3 +1,61 @@
-﻿body
-{
+﻿html, body {
+    width: 100%;
+}
+
+.background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    background-image: url("/Images/EalingBroadwayBackground.jpg");
+    width: 1200px;
+    height: 800px;
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+}
+
+.content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Broadway;
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+}
+
+.start {
+    text-align:center;
+}
+
+.clue {
+    text-align:center;
+}
+
+.hint {
+    text-align:center;
+}
+
+.correct {
+    text-align:center;
+}
+
+.incorrect {
+    text-align:center;
 }
