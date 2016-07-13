@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="hiddenCity">
+<head>
+    <title>Hidden City - Ealing</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body ng-controller="controller as controller">
+
+    <h1>Hidden City - Ealing</h1>
+
+    <div>
+        <p>
+            Welcome to Hidden City - Ealing Edition
+        </p>
+        <p>
+            Before you are X clues and riddles that will have you walking all over Ealing, allow around 2 - 2.5 hours to complete the hunt. Click the start button below to begin playing!
+        </p>
+        <button onclick="Start()" >START</button>
+    </div>
+
+    <div>
+        <p>{{clue}}</p>
+        <input type="text" ng-model="controller.answer" />
+        <button onclick="SubmitAnswer()">Submit</button>
+    </div>
+
+    <script src="Angular.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
