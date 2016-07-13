@@ -8,7 +8,7 @@
     right: 0;
     z-index: 1;
     display: block;
-    background-image: url("/Images/EalingBroadwayBackground.jpg");
+    background-image: url("Images/EalingBroadwayBackground.jpg");
     width: 1200px;
     height: 800px;
     -webkit-filter: blur(7px);
