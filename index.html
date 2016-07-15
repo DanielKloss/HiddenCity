@@ -2,11 +2,16 @@
 
 <html ng-app="hiddenCity">
 <head>
+    <style>
+        .ng-cloak {
+            display: none;
+        }
+    </style>
     <title>Hidden City - Ealing</title>
     <link rel="stylesheet" href="Style.css" />
     <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 </head>
-<body ng-controller="controller as controller">
+<body ng-controller="controller as controller" class="ng-cloak" ng-cloak>
     <div class="background"> </div>
 
     <div class="content">
@@ -27,7 +32,7 @@
 
         <div class="clue" ng-show="controller.hasStarted">
             <p>{{controller.currentClue.question}}</p>
-            <input type="text" ng-model="controller.theAnswer" ng-show="!controller.hasFinished"/>
+            <input type="text" ng-model="controller.theAnswer" ng-show="!controller.hasFinished" />
             <button class="formButton" ng-click="controller.SubmitAnswer()" ng-show="!controller.hasFinished">Submit</button>
             <button class="formButton" ng-click="controller.GetHint()" ng-show="!controller.hasFinished">Hint</button>
         </div>
