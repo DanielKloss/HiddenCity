@@ -1,9 +1,21 @@
 'use strict';
 
-angular.module('hiddenCity', [])
+angular.module('hiddenCity', ['ngCookies'])
 
-.controller('controller', [function () {
+.controller('controller', ['$cookies', function ($cookies) {
     var self = this;
+
+    self.CheckIfStarted = function () {
+        if (parseInt(self.currentClueIndex) != 0) {
+            self.hasStarted = true;
+        }
+    }
+
+    self.CheckIfFinished = function () {
+        if (parseInt(self.currentClueIndex) + 1 == self.clues.length) {
+            self.hasFinished = true;
+        }
+    }
 
     self.clues = [
         {
@@ -37,7 +49,15 @@ angular.module('hiddenCity', [])
     self.hintGiven = false;
     self.hasFinished = false;
 
-    self.currentClueIndex = 0;
+    self.currentClueIndex = $cookies.get('currentClueIndex');
+
+    if (self.currentClueIndex == undefined) {
+        self.currentClueIndex = 0;
+    }
+
+    self.CheckIfFinished();
+    self.CheckIfStarted();
+
     self.currentClue = self.clues[self.currentClueIndex];
     self.currentHint;
     self.theAnswer = "";
@@ -48,23 +68,24 @@ angular.module('hiddenCity', [])
 
     self.GetHint = function () {
         self.currentHint = self.hints[self.currentClueIndex];
+        self.enteredClue = false;
         self.hintGiven = true;
     };
 
     self.SubmitAnswer = function () {
         self.enteredClue = true;
         self.isCorrect = false;
+        self.hintGiven = false;
 
         angular.forEach(self.clues[self.currentClueIndex].answers, function (value, key) {
             if (value == self.theAnswer) {
                 self.currentClueIndex++;
+                $cookies.put('currentClueIndex', self.currentClueIndex);
                 self.currentClue = self.clues[self.currentClueIndex];
                 self.isCorrect = true;
                 self.hintGiven = false;
 
-                if (self.currentClueIndex + 1 == self.clues.length) {
-                    self.hasFinished = true;
-                }
+                self.CheckIfFinished();
             }
         });
     };
