@@ -4,13 +4,16 @@
 <head>
     <title>Hidden City - Ealing</title>
     <link rel="stylesheet" href="Style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 </head>
 <body ng-controller="controller as controller">
     <div class="background"> </div>
 
     <div class="content">
-        <div class="title" style="margin-top:5%">Hidden City</div>
-        <div class="title">EALING</div>
+        <div class="titleContainer">
+            <div class="title" style="margin-top:5%">Hidden City</div>
+            <div class="subTitle">EALING</div>
+        </div>
 
         <div class="start" ng-show="!controller.hasStarted">
             <p>
@@ -19,23 +22,26 @@
             <p>
                 Before you are X clues and riddles that will have you walking all over Ealing, allow around 2 - 2.5 hours to complete the hunt. Click the start button below to begin playing!
             </p>
+            <button ng-click="controller.Start()">Start</button>
         </div>
 
-        <div class="clue">
+        <div class="clue" ng-show="controller.hasStarted">
             <p>{{controller.currentClue.question}}</p>
-            <input type="text" ng-model="controller.theAnswer" />
-            <button ng-click="controller.SubmitAnswer()">Submit</button>
-            <button ng-click="controller.GetHint()">Hint</button>
+            <input type="text" ng-model="controller.theAnswer" ng-show="!controller.hasFinished"/>
+            <button class="formButton" ng-click="controller.SubmitAnswer()" ng-show="!controller.hasFinished">Submit</button>
+            <button class="formButton" ng-click="controller.GetHint()" ng-show="!controller.hasFinished">Hint</button>
         </div>
 
-        <div class="hint" ng-show="controller.hintGiven">{{controller.currentHint.hint}}</div>
-
-        <div class="correct" ng-show="controller.isCorrect && controller.hasStarted">
-            <p>THAT WAS THE CORRECT ANSWER!</p>
+        <div class="hint info" ng-show="controller.hintGiven">
+            {{controller.currentHint.hint}}
         </div>
 
-        <div class="incorrect" ng-show="!controller.isCorrect && controller.hasStarted">
-            <p>THAT ANSWER WAS INCORRECT!</p>
+        <div class="correct info" ng-show="controller.isCorrect && controller.hasStarted">
+            THAT IS THE RIGHT ANSWER!
+        </div>
+
+        <div class="incorrect info" ng-show="!controller.isCorrect && controller.hasStarted && controller.enteredClue">
+            THAT IS THE WRONG ANSWER!
         </div>
     </div>
 
