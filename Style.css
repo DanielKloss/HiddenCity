@@ -111,8 +111,8 @@
 
 button {
     border: solid black 5px;
-    width: 250px;
-    height: 45px;
+    width: 275px;
+    height: 90px;
     background: none;
     font-family: 'Sigmar One';
     font-size: 45px;
@@ -127,8 +127,8 @@ button {
 
 input[type=text] {
     border: solid grey 5px;
-    width: 250px;
-    height: 40px;
+    width: 450px;
+    height: 65px;
     padding: 0 10px 0 10px;
     font-family: 'Sigmar One';
     font-size: 43px;
