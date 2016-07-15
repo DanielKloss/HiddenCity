@@ -32,13 +32,19 @@ angular.module('hiddenCity', [])
     ];
 
     self.hasStarted = false;
+    self.enteredClue = false;
     self.isCorrect = false;
     self.hintGiven = false;
+    self.hasFinished = false;
 
     self.currentClueIndex = 0;
     self.currentClue = self.clues[self.currentClueIndex];
     self.currentHint;
     self.theAnswer = "";
+
+    self.Start = function () {
+        self.hasStarted = true;
+    }
 
     self.GetHint = function () {
         self.currentHint = self.hints[self.currentClueIndex];
@@ -46,7 +52,7 @@ angular.module('hiddenCity', [])
     };
 
     self.SubmitAnswer = function () {
-        self.hasStarted = true;
+        self.enteredClue = true;
         self.isCorrect = false;
 
         angular.forEach(self.clues[self.currentClueIndex].answers, function (value, key) {
@@ -55,6 +61,10 @@ angular.module('hiddenCity', [])
                 self.currentClue = self.clues[self.currentClueIndex];
                 self.isCorrect = true;
                 self.hintGiven = false;
+
+                if (self.currentClueIndex + 1 == self.clues.length) {
+                    self.hasFinished = true;
+                }
             }
         });
     };
