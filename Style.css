@@ -38,7 +38,7 @@
     margin-right: auto;
     text-align: center;
     font-family: 'Sigmar One', cursive;
-    font-size: 50px;
+    font-size: 75px;
     font-weight: bolder;
     color: black;
 }
@@ -51,7 +51,7 @@
     margin-bottom: 25px;
     text-align: center;
     font-family: 'Sigmar One', cursive;
-    font-size: 40px;
+    font-size: 65px;
     font-weight: bold;
     color: black;
 }
@@ -64,7 +64,7 @@
     text-align: center;
     text-align: center;
     font-family: 'Sigmar One', cursive;
-    font-size: 15px;
+    font-size: 40px;
     color: black;
 }
 
@@ -76,13 +76,13 @@
     text-align: center;
     text-align: center;
     font-family: 'Sigmar One', cursive;
-    font-size: 20px;
+    font-size: 55px;
     color: black;
 }
 
 .info {
     font-family: 'Sigmar One', cursive;
-    font-size: 20px;
+    font-size: 45px;
     color: black;
     position: fixed;
     bottom: 0;
@@ -115,7 +115,7 @@ button {
     height: 45px;
     background: none;
     font-family: 'Sigmar One';
-    font-size: 20px;
+    font-size: 45px;
 }
 
 .formButton {
@@ -131,5 +131,5 @@ input[type=text] {
     height: 40px;
     padding: 0 10px 0 10px;
     font-family: 'Sigmar One';
-    font-size: 18px;
+    font-size: 43px;
 }
