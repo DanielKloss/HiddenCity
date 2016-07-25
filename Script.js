@@ -169,6 +169,7 @@ angular.module('hiddenCity', [])
                 self.currentClue = self.clues[self.currentClueIndex];
                 self.isCorrect = true;
                 self.hintGiven = false;
+                self.theAnswer = "";
 
                 if (self.currentClueIndex + 1 == self.clues.length) {
                     self.hasFinished = true;
