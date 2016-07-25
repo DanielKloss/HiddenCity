@@ -107,47 +107,47 @@ angular.module('hiddenCity', ['ngCookies'])
     self.hints = [
         {
             number: 1,
-            hint: "Walk to St Stephens Church and all the way up North Avenue",
+            hint: "Walk to St Stephens Church and all the way up North Avenue.",
         },
         {
             number: 2,
-            hint: "Enter Cleveland Park and look in the flower bed at the center",
+            hint: "Enter Cleveland Park and look in the flower bed at the center.",
         },
         {
             number: 3,
-            hint: "Take the diagonal path towards the Duke of Kent and enter Scotch Common",
+            hint: "Take the diagonal path towards the Duke of Kent and enter Scotch Common.",
         },
         {
             number: 4,
-            hint: "Go to the bowls clubhouse",
+            hint: "Go to the bowls clubhouse.",
         },
         {
             number: 5,
-            hint: "Look at the Meadvale Road gates",
+            hint: "Look at the Meadvale Road gates.",
         },
         {
             number: 6,
-            hint: "There is a menu outside The Village Inn",
+            hint: "There is a menu outside The Village Inn.",
         },
         {
             number: 7,
-            hint: "Walk past the Methodist to the CofE. On the corner of Denison Road is a statue",
+            hint: "Walk past the Methodist to the CofE. On the corner of Denison Road is a statue.",
         },
         {
             number: 8,
-            hint: "Number 23, Woodfield Avenue",
+            hint: "Number 23, Woodfield Avenue.",
         },
         {
             number: 9,
-            hint: "76 is Downhurst Residential Home",
+            hint: "76 is Downhurst Residential Home.",
         },
         {
             number: 10,
-            hint: "Check the post box on the corner of St Leonard's and Carlton",
+            hint: "Check the post box on the corner of St Leonard's and Carlton.",
         },
         {
             number: 11,
-            hint: "The nearest bed is in a hotel?",
+            hint: "The nearest bed is in a hotel.",
         },
     ];
 
