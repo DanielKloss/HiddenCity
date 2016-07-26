@@ -38,7 +38,7 @@
     margin-right: auto;
     text-align: center;
     font-family: 'Sigmar One', cursive;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bolder;
     color: black;
 }
@@ -51,7 +51,7 @@
     margin-bottom: 25px;
     text-align: center;
     font-family: 'Sigmar One', cursive;
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: bold;
     color: black;
 }
@@ -98,7 +98,7 @@ button {
     text-align: center;
     background: none;
     font-family: 'Sigmar One';
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .formButton {
@@ -116,5 +116,5 @@ input[type=text] {
     margin-right: auto;
     text-align: center;
     font-family: 'Sigmar One';
-    font-size: 1em;
+    font-size: 2em;
 }
