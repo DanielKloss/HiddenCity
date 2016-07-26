@@ -98,7 +98,7 @@ button {
     text-align: center;
     background: none;
     font-family: 'Sigmar One';
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .formButton {
@@ -116,5 +116,5 @@ input[type=text] {
     margin-right: auto;
     text-align: center;
     font-family: 'Sigmar One';
-    font-size: 2em;
+    font-size: 1em;
 }
