@@ -23,12 +23,20 @@
 
         <div class="clue" ng-show="!controller.hasStarted && !controller.hasFinished">
             <p>
-                Welcome to Hidden City - Ealing Edition
+                HAPPY BIRTHDAY!
             </p>
             <p>
-                Before you are X clues and riddles that will have you walking all over Ealing, allow around 2 - 2.5 hours to complete the hunt. Click the start button below to begin playing!
+                And welcome to the very special Ealing Edition of Hidden City!
+            </p>
+            <p>
+                Before you are 11 clues and riddles that will have you walking all over Ealing, allow around 2 - 2.5 hours to complete the hunt. 
             </p>
             <button ng-click="controller.Start()">Start</button>
+        </div>
+
+        <div class="quote" ng-show="controller.hasStarted">
+            <p>{{controller.currentClue.quote}}</p>
+            <p>{{controller.currentClue.quoter}}</p>
         </div>
 
         <div class="clue" ng-show="controller.hasStarted">

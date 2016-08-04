@@ -56,6 +56,18 @@
     color: black;
 }
 
+.quote {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1em;
+    font-style: italic;
+    color: black;
+}
+
 .clue {
     position: relative;
     width: 100%;
