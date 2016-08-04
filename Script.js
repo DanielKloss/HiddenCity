@@ -22,7 +22,7 @@ angular.module('hiddenCity', ['ngCookies'])
             number: 1,
             quote: "It can be a dangerous business going out your door. You step onto the road, and if you don't keep your feet, there is no knowing where you might be swept off to.",
             quoter: "- Bilbo Baggins -",
-            question: "You leave home on a great quest, looking for the wise circular god. You find it instantly and it tells you to head 'North'. Which Ealing family live furthest 'north'?",
+            question: "You leave home on a great quest. Your first task is to look for the circular god. You head 'North' from the circular god. Which Ealing family live furthest 'north'?",
             answers: ["Hurst", "Hursts", "The Hursts"]
         },
         {
@@ -36,14 +36,14 @@ angular.module('hiddenCity', ['ngCookies'])
             number: 3,
             quote: "I swear to drunk I'm not god",
             quoter: "- Annonymous Drunk -",
-            question: "You hear The Duke calling but he's drunk on whiskey and walking DIAGONALLY. Luckily there is a nice avenue of Limes for him to sleep under. When were they planted?",
+            question: "You hear The Duke calling but he's drunk on whiskey and walking DIAGONALLY. Luckily there is a common nearby and a nice Avenue of Limes for him to sleep under. When were they planted?",
             answers: ["1980", "Nineteen Eighty", "36 years ago"]
         },
         {
             number: 4,
             quote: "Football is a simple game. Twenty-two men chase a ball for 90 minutes and at the end, the Germans always win.",
             quoter: "- Gary Lineker -",
-            question: "All this walking has you in the mood for exercise. You walk past the mordern sports clubhouse to a much more elderly version. When was this clubhouse founded?",
+            question: "All this walking has you in the mood for more light exercise. Go past the mordern sports clubhouse to a much more elderly version. When was this clubhouse founded?",
             answers: ["1930", "Ninteen Thirty", "86 years ago"]
         },
         {
@@ -64,7 +64,7 @@ angular.module('hiddenCity', ['ngCookies'])
             number: 7,
             quote: "Only the dead have seen the end of war.",
             quoter: "- Plato -",
-            question: "As you continue, new religion becomes old while a gothic structure looms. Who was the stoney symbolism erected by?",
+            question: "As you continue, new religion becomes old and mordern buildings become gothic structures. Who was the stoney religious symbolism erected by?",
             answers: ["Relatives and Friends", "Relatives + friends", "Relatives Friends"]
         },
         {
@@ -78,21 +78,21 @@ angular.module('hiddenCity', ['ngCookies'])
             number: 9,
             quote: "It is not the mountian we conquer but ourselves.",
             quoter: "- Edmund Hillary -",
-            question: "Onwards and upwards onto Woodfield's bigger brother. You keep climbing until you hit a real MOUNTian. Up for a challenge, you keep climbing. You cross a royal pathway and keep your sword on you left side as  you attack her castle. Who lives at 76?",
+            question: "Onwards and upwards onto Woodfield's bigger brother. You keep climbing until you hit a real MOUNTian. Up for a challenge, you keep climbing. You cross a royal pathway and keep your sword on you left side as you attack the castle. Who lives at 76?",
             answers: ["Nanna", "Barbara", "Nana"]
         },
         {
             number: 10,
             quote: "Bazinga",
             quoter: "- Sheldon Cooper -",
-            question: "You keep descending upon the castle, wave after wave of troops until until all that is left is a single scorched tree in the middle of the path. Eager for some joy after the terrors of war you head towards the playground. Your prayers are soon answered by a scientist saint. When is the last time you could send a letter back home?",
+            question: "You keep descending upon the castle, wave after wave of troops until until all that is left is a single scorched tree in the middle of the path. Eager for some joy after the terrors of war you head towards the playground. As religion and science collide you start to long for home. When is the last time you could send a letter back home?",
             answers: ["17:45", "5:45", "five forty five", "5-45", "17-45", "5.45", "17.45"]
         },
         {
             number: 11,
             quote: "It's good to have an end to journey toward; but it is the journey that matters, in the end",
             quoter: "- Ernest Hemmingway -",
-            question: "After a long journey you decide to head homeward. You need to stock up on supplies so you hang a left at the shop on the corner, looking for somewhere to spend the night. Where is the closest bed?",
+            question: "After a long journey you decide to head homeward. You need to stock up on supplies so you take a left at the shop on the corner, looking for somewhere to spend the night. Where is the closest bed?",
             answers: ["The Drayton", "The Drayton Court", "Drayton", "The Drayton Court Hotel", "The Drayton Hotel"]
         },
         {
