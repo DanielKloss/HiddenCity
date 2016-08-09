@@ -99,7 +99,7 @@ angular.module('hiddenCity', ['ngCookies'])
             number: 12,
             quote: "",
             quoter: "",
-            question: "Congratulations! You have finished the quest! Use this code in the Drayton for a well earned drink and bite to eat - Happy Birthday!",
+            question: "Congratulations! You have finished the quest! Use your voucher to claim a free drink in the Drayton - Happy Birthday!",
             answers: []
         }
     ];
