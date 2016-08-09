@@ -18,18 +18,11 @@ angular.module('hiddenCity', ['ngCookies'])
     }
 
     self.clues = [
-        //{
-          //  number: 1,
-            //quote: "It can be a dangerous business going out your door. You step onto the road, and if you don't keep your feet, there is no knowing where you might be swept off to.",
-            //quoter: "- Bilbo Baggins -",
-            //question: "You leave home on a great quest. Your first task is to look for the circular god. You head 'North' from the circular god. Which Ealing family live furthest 'north'?",
-            //answers: ["Hurst", "Hursts", "The Hursts"]
-        //},
         {
             number: 1,
-            quote: "gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble .",
-            quoter: "- gobble gobble gobble gobble  -",
-            question: "gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble?",
+            quote: "It can be a dangerous business going out your door. You step onto the road, and if you don't keep your feet, there is no knowing where you might be swept off to.",
+            quoter: "- Bilbo Baggins -",
+            question: "You leave home on a great quest. Your first task is to look for the circular god. You head 'North' from the circular god. Which Ealing family live furthest 'north'?",
             answers: ["Hurst", "Hursts", "The Hursts"]
         },
         {
