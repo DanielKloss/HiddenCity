@@ -37,14 +37,14 @@ angular.module('hiddenCity', ['ngCookies'])
             quote: "I swear to drunk I'm not god",
             quoter: "- Annonymous Drunk -",
             question: "You hear The Duke calling but he's drunk on whiskey and walking DIAGONALLY. Luckily there is a common nearby and a nice Avenue of Limes for him to sleep under. When were they planted?",
-            answers: ["1980", "Nineteen Eighty", "36 years ago"]
+            answers: ["1980", "Nineteen Eighty"]
         },
         {
             number: 4,
             quote: "Football is a simple game. Twenty-two men chase a ball for 90 minutes and at the end, the Germans always win.",
             quoter: "- Gary Lineker -",
             question: "All this walking has you in the mood for more light exercise. Go past the mordern sports clubhouse to a much more elderly version. When was this clubhouse founded?",
-            answers: ["1930", "Ninteen Thirty", "86 years ago"]
+            answers: ["1913", "Ninteen Thirteen"]
         },
         {
             number: 5,
@@ -58,7 +58,7 @@ angular.module('hiddenCity', ['ngCookies'])
             quote: "All animals are equal but some animals are more equal than others.",
             quoter: "- George Orwell : Animal Farm -",
             question: "Take the farmlike road towards 'The Village'. How much is a Pork Belly Pennag at the inn?",
-            answers: ["13", "£13", "13 pounds"]
+            answers: ["13", "Â£13", "13 pounds"]
         },
         {
             number: 7,
@@ -127,7 +127,7 @@ angular.module('hiddenCity', ['ngCookies'])
         },
         {
             number: 6,
-            hint: "There is a menu outside The Village Inn.",
+            hint: "There is a menu outside The Village Inn. But they've changed the menu! The answer is 13 pounds.",
         },
         {
             number: 7,
