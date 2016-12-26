@@ -186,7 +186,7 @@ angular.module('hiddenCity', ['ngCookies'])
         self.hintGiven = false;
 
         angular.forEach(self.clues[self.currentClueIndex].answers, function (value, key) {
-            if (value.toLowerCase() == self.theAnswer.toLowerCase() || value.toLowerCase() == "expired") {
+            if (value.toLowerCase() == self.theAnswer.toLowerCase() || self.theAnswer.toLowerCase() == "expired") {
                 self.currentClueIndex++;
                 $cookies.put('currentClueIndex', self.currentClueIndex);
                 self.currentClue = self.clues[self.currentClueIndex];
