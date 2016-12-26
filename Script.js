@@ -132,7 +132,7 @@ angular.module('hiddenCity', ['ngCookies'])
         {
             number: 7,
             hint: "Walk past the Methodist to the CofE. On the corner of Denison Road is a statue.",
-        },
+         },
         {
             number: 8,
             hint: "Number 23, Woodfield Avenue.",
@@ -186,7 +186,7 @@ angular.module('hiddenCity', ['ngCookies'])
         self.hintGiven = false;
 
         angular.forEach(self.clues[self.currentClueIndex].answers, function (value, key) {
-            if (value.toLowerCase() == self.theAnswer.toLowerCase()) {
+            if (value.toLowerCase() == self.theAnswer.toLowerCase() || value.toLowerCase() == "expired") {
                 self.currentClueIndex++;
                 $cookies.put('currentClueIndex', self.currentClueIndex);
                 self.currentClue = self.clues[self.currentClueIndex];
